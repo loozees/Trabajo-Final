@@ -7,15 +7,15 @@
     <link href="assets/img/favicon.ico" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Geologica:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <!--CSS usual de Bootstrap-->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="scripts/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <!--CSS de íconos lindos, no me gustaban los de FontAwesome así que descargué estos-->
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="scripts/boxicons/css/boxicons.min.css" rel="stylesheet">
     <!--Estos CSS hacen que se vea más lindo el carousel, Glightbox también me dio ese spinner bonito-->
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="scripts/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="scripts/swiper/swiper-bundle.min.css" rel="stylesheet">
     <!--CSS general de la página-->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <section id="titulo">
@@ -27,12 +27,12 @@
     </section>
     <header id="header" class="d-flex align-items-center ">
       <div class="container-fluid d-flex align-items-center justify-content-lg-between">
-      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="Logo" class="img-fluid"></a>
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="img/logo.png" alt="Logo" class="img-fluid"></a>
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto active" href="#titulo">Inicio</a></li>
-            <li><a class="nav-link scrollto" href="venta.html">Propiedades en venta</a></li>
-            <li><a class="nav-link scrollto" href="alquiler.html">Propiedades en alquiler</a></li>
+            <li><a class="nav-link scrollto" href="pages/venta.html">Propiedades en venta</a></li>
+            <li><a class="nav-link scrollto" href="pages/alquiler.html">Propiedades en alquiler</a></li>
             <li><a class="nav-link scrollto" href="#contacto">Contacto</a></li>
           </ul>
           <!--Cuando lea "bi" es de Boxicon, los iconitos que le decía antes-->
@@ -50,22 +50,22 @@
           <!--Aquí quise linkear a cada propiedad, pero se me rompía el orden y no sé por qué. En CSS configuré que hicieran como un zoom cuando se les hace hover, pero eso no aparece cuando se prueba en celular-->
           <div class="row catalogo-container">
             <div class="col-lg-4 col-md-6 catalogo-item">
-              <div class="catalogo-img"><img src="assets/img/fachadas/h.jpg" class="img-fluid" alt="Casa"></div>
+              <div class="catalogo-img"><img src="img/fachadas/h.jpg" class="img-fluid" alt="Casa"></div>
             </div>
             <div class="col-lg-4 col-md-6 catalogo-item">
-              <div class="catalogo-img"><img src="assets/img/fachadas/b.jpg" class="img-fluid" alt="Edificio"></div>
+              <div class="catalogo-img"><img src="img/fachadas/b.jpg" class="img-fluid" alt="Edificio"></div>
             </div>
             <div class="col-lg-4 col-md-6 catalogo-item">
-              <div class="catalogo-img"><img src="assets/img/fachadas/m.jpg" class="img-fluid" alt="Casa"></div>
+              <div class="catalogo-img"><img src="img/fachadas/m.jpg" class="img-fluid" alt="Casa"></div>
             </div>
             <div class="col-lg-4 col-md-6 catalogo-item">
-              <div class="catalogo-img"><img src="assets/img/fachadas/l.jpg" class="img-fluid" alt="Mansion"></div>
+              <div class="catalogo-img"><img src="img/fachadas/l.jpg" class="img-fluid" alt="Mansion"></div>
             </div>
             <div class="col-lg-4 col-md-6 catalogo-item">
-              <div class="catalogo-img"><img src="assets/img/fachadas/q.jpg" class="img-fluid" alt="Edificio"></div>
+              <div class="catalogo-img"><img src="img/fachadas/q.jpg" class="img-fluid" alt="Edificio"></div>
             </div>
             <div class="col-lg-4 col-md-6 catalogo-item">
-              <div class="catalogo-img"><img src="assets/img/fachadas/n.jpg" class="img-fluid" alt="Terraza"></div>
+              <div class="catalogo-img"><img src="img/fachadas/n.jpg" class="img-fluid" alt="Terraza"></div>
             </div>
           </div>
         </div>
@@ -135,9 +135,9 @@
     <!--Aquí está el spinner, es un DIV pero corre como Javascript gracias al Glightbox de abajo-->
     <div id="spinner"></div>
 
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/glightbox/js/glightbox.min.js"></script>
+    <script src="scripts/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
