@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Superultra Real Estate</title>
+    <link href="assets/img/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Geologica:300,300i,400,400i,600,600i,700,700i|Ubuntu:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--CSS usual de Bootstrap-->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!--CSS de íconos lindos, no me gustaban los de FontAwesome así que descargué estos-->
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!--Estos CSS hacen que se vea más lindo el carousel, Glightbox también me dio ese spinner bonito-->
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!--CSS general de la página-->
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id="titulo">
+      <div class="titulo-container">
+        <h1>Superultra Real Estate</h1>
+        <h2>Propiedades con estilo</h2>
+        <a href="#catalogo" class="btn-get-started scrollto">Conocé más</a>
+      </div>
+    </section>
+    <header id="header" class="d-flex align-items-center ">
+      <div class="container-fluid d-flex align-items-center justify-content-lg-between">
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="Logo" class="img-fluid"></a>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#titulo">Inicio</a></li>
+            <li><a class="nav-link scrollto" href="venta.html">Propiedades en venta</a></li>
+            <li><a class="nav-link scrollto" href="alquiler.html">Propiedades en alquiler</a></li>
+            <li><a class="nav-link scrollto" href="#contacto">Contacto</a></li>
+          </ul>
+          <!--Cuando lea "bi" es de Boxicon, los iconitos que le decía antes-->
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="catalogo" class="catalogo">
+        <div class="container">
+          <div class="section-title">
+            <h2>Propiedades con estilo</h2>
+            <p>En Superultra Real Estate tenemos lo último en diseño y confort, con un gran catálogo de propiedades en Argentina que te permitirá encontrar ese hogar que tanto buscás.</p>
+          </div>
+          <!--Aquí quise linkear a cada propiedad, pero se me rompía el orden y no sé por qué. En CSS configuré que hicieran como un zoom cuando se les hace hover, pero eso no aparece cuando se prueba en celular-->
+          <div class="row catalogo-container">
+            <div class="col-lg-4 col-md-6 catalogo-item">
+              <div class="catalogo-img"><img src="assets/img/fachadas/h.jpg" class="img-fluid" alt="Casa"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 catalogo-item">
+              <div class="catalogo-img"><img src="assets/img/fachadas/b.jpg" class="img-fluid" alt="Edificio"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 catalogo-item">
+              <div class="catalogo-img"><img src="assets/img/fachadas/m.jpg" class="img-fluid" alt="Casa"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 catalogo-item">
+              <div class="catalogo-img"><img src="assets/img/fachadas/l.jpg" class="img-fluid" alt="Mansion"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 catalogo-item">
+              <div class="catalogo-img"><img src="assets/img/fachadas/q.jpg" class="img-fluid" alt="Edificio"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 catalogo-item">
+              <div class="catalogo-img"><img src="assets/img/fachadas/n.jpg" class="img-fluid" alt="Terraza"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacto" class="contacto">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contactanos</h2>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="direccion">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Nuestra oficina:</h4>
+                  <p>Avenida Test 12345, Buenos Aires, Argentina</p>
+                </div>
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Nuestro email:</h4>
+                  <p>info@test.com</p>
+                </div>
+                <div class="telefono">
+                  <i class="bi bi-phone"></i>
+                  <h4>Nuestro teléfono:</h4>
+                  <p>(011) 1111-1111</p>
+                </div>
+              </div>
+            </div>
+            <!--Gracias por el dato de Formspree :) creo que seguí bien los modelos de formulario que me brindaban ellos-->
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form action="https://formspree.io/f/meqwbgyj" method="post" class="email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Email" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Cargando</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tu mensaje fue enviado. ¡Muchas gracias!</div>
+                </div>
+                <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="redes">
+            <a href="https://es-la.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="https://ar.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Aquí está el spinner, es un DIV pero corre como Javascript gracias al Glightbox de abajo-->
+    <div id="spinner"></div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
