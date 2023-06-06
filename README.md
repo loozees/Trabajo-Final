@@ -1,7 +1,9 @@
 Trabajo Práctico Final - Programación Web Inicial (grupo C55)
+
 Profesora: Ludmila Martos
 
 Sitio creado por: Luz Rodríguez
+
 Lenguajes utilizados: HTML, CSS, Bootstrap, JavaScript
 
 Fuentes de creación de assets:
